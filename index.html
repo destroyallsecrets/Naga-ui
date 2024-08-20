@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electron App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <button onclick="openDiv('music')">Music</button>
+    <button onclick="openDiv('news')">News</button>
+  </nav>
+  <button onclick="openDiv('main')">Open Main Div</button>
+  <div id="content"></div>
+  <div id="draggableWindow" class="draggable">
+    <div id="draggableHeader">Click here to move</div>
+    <div id="draggableContent"></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
